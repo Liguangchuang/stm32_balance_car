@@ -3,7 +3,7 @@
 .\output\motor.o: .\CMSIS\core_cm3.h
 .\output\motor.o: D:\keil\ARM\ARMCC\Bin\..\include\stdint.h
 .\output\motor.o: .\CMSIS\system_stm32f10x.h
-.\output\motor.o: .\User\stm32f10x_conf.h
+.\output\motor.o: .\FWlib\inc\stm32f10x_conf.h
 .\output\motor.o: .\FWlib\inc\stm32f10x_dma.h
 .\output\motor.o: .\CMSIS\stm32f10x.h
 .\output\motor.o: .\FWlib\inc\stm32f10x_gpio.h

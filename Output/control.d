@@ -12,7 +12,7 @@
 .\output\control.o: .\CMSIS\core_cm3.h
 .\output\control.o: D:\keil\ARM\ARMCC\Bin\..\include\stdint.h
 .\output\control.o: .\CMSIS\system_stm32f10x.h
-.\output\control.o: .\User\stm32f10x_conf.h
+.\output\control.o: .\FWlib\inc\stm32f10x_conf.h
 .\output\control.o: .\FWlib\inc\stm32f10x_dma.h
 .\output\control.o: .\CMSIS\stm32f10x.h
 .\output\control.o: .\FWlib\inc\stm32f10x_gpio.h

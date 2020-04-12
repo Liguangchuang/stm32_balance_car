@@ -4,7 +4,7 @@
 .\output\dataflash.o: .\CMSIS\core_cm3.h
 .\output\dataflash.o: D:\keil\ARM\ARMCC\Bin\..\include\stdint.h
 .\output\dataflash.o: .\CMSIS\system_stm32f10x.h
-.\output\dataflash.o: .\User\stm32f10x_conf.h
+.\output\dataflash.o: .\FWlib\inc\stm32f10x_conf.h
 .\output\dataflash.o: .\FWlib\inc\stm32f10x_dma.h
 .\output\dataflash.o: .\CMSIS\stm32f10x.h
 .\output\dataflash.o: .\FWlib\inc\stm32f10x_gpio.h
