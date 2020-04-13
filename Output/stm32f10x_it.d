@@ -1,5 +1,5 @@
-.\output\stm32f10x_it.o: FWlib\stm32f10x_it.c
-.\output\stm32f10x_it.o: FWlib\stm32f10x_it.h
+.\output\stm32f10x_it.o: myCode\User\stm32f10x_it.c
+.\output\stm32f10x_it.o: myCode\User\stm32f10x_it.h
 .\output\stm32f10x_it.o: .\CMSIS\stm32f10x.h
 .\output\stm32f10x_it.o: .\CMSIS\core_cm3.h
 .\output\stm32f10x_it.o: D:\keil\ARM\ARMCC\Bin\..\include\stdint.h
@@ -14,7 +14,7 @@
 .\output\stm32f10x_it.o: .\FWlib\stm32f10x_usart.h
 .\output\stm32f10x_it.o: .\FWlib\misc.h
 .\output\stm32f10x_it.o: D:\keil\ARM\ARMCC\Bin\..\include\stdio.h
-.\output\stm32f10x_it.o: .\myCode\User\control.h
+.\output\stm32f10x_it.o: myCode\User\control.h
 .\output\stm32f10x_it.o: .\myCode\Bsp\mpu6050.h
 .\output\stm32f10x_it.o: .\myCode\Bsp\usart.h
 .\output\stm32f10x_it.o: .\myCode\Sys\systick.h

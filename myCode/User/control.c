@@ -102,7 +102,7 @@ void CarUpstandInit(void)
 	g_fBluetoothSpeed  = g_fBluetoothDirection = 0;
 	g_fBluetoothDirectionNew = g_fBluetoothDirectionOld = 0;
 
-  g_u8MainEventCount=0;
+    g_u8MainEventCount=0;
 	g_u8SpeedControlCount=0;
  	g_u8SpeedControlPeriod=0;
 }
@@ -320,13 +320,13 @@ void MotorOutput(void)
 
 void GetMotorPulse(void)  //采集电机速度脉冲
 { 	
-  g_s16LeftMotorPulse = TIM_GetCounter(TIM2);     
-  g_s16RightMotorPulse= -TIM_GetCounter(TIM4);
-  TIM2->CNT = 0;
-  TIM4->CNT = 0;   //清零
+    g_s16LeftMotorPulse = TIM_GetCounter(TIM2);     
+    g_s16RightMotorPulse= -TIM_GetCounter(TIM4);
+    TIM2->CNT = 0;
+    TIM4->CNT = 0;   //清零
 
-  g_s32LeftMotorPulseSigma +=  g_s16LeftMotorPulse;
-  g_s32RightMotorPulseSigma += g_s16RightMotorPulse; 
+    g_s32LeftMotorPulseSigma +=  g_s16LeftMotorPulse;
+    g_s32RightMotorPulseSigma += g_s16RightMotorPulse; 
 	
 	g_iLeftTurnRoundCnt -= g_s16LeftMotorPulse;
 	g_iRightTurnRoundCnt -= g_s16RightMotorPulse;

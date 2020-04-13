@@ -98,9 +98,8 @@ void SetBlueToothName(void)
 */
 void BspInit(void)
 {
-	SWDConfig();
-	
-	ADCInit();				//ADC初始化
+	// SWDConfig();
+	// ADCInit();				//ADC初始化
 
 	USART1Init();			//串口1初始化-底板预留下载及调试用
 	USART3Init(0);			//串口3初始化-用于蓝牙
@@ -112,15 +111,14 @@ void BspInit(void)
 	
 	i2cInit();	 			//I2C初始化
 	
-	InfraredIOInit();		//红外IO口初始化
+	// InfraredIOInit();		//红外IO口初始化
 
-	OLED_Init();			//OLED初始化
-	MPU6050_Init();		    //MPU6050初始化
+	OLED_Init();			   //OLED初始化
+	MPU6050_Init();		       //MPU6050初始化
 	
-	LEDInit();				//指示灯初始化
-	
-	UltraSelfCheck();							//	超声模块开机自检
-	InfrareSelfCheck();						//  红外模块开机自检
+	// LEDInit();				//指示灯初始化
+	// UltraSelfCheck();		//	超声模块开机自检
+	// InfrareSelfCheck();		//  红外模块开机自检
 	
 	delay_ms(500);			//延时0.5s，等待蓝牙模块启动
 	Uart3SendStr("\r\nAT+BAUD8\r\n"); //配置蓝牙串口波特率为115200 ( 原波特率9600 ) 
