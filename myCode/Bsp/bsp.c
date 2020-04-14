@@ -113,7 +113,8 @@ void BspInit(void)
 	
 	// InfraredIOInit();		//红外IO口初始化
 
-	OLED_Init();			   //OLED初始化
+	// OLED_Init();			   //OLED初始化
+	delay_ms(20);
 	MPU6050_Init();		       //MPU6050初始化
 	
 	// LEDInit();				//指示灯初始化

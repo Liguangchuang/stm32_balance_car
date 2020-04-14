@@ -64,34 +64,34 @@ int main(void)
 	while (1)
 	{
 		
-		// SecTask();			//秒级任务
+		SecTask();			//秒级任务
 
-		// if(SoftTimer[1] == 0)
-		// {// 每隔50ms 执行一次
-		// 	SoftTimer[1] = 20;
-		// 	ResponseIMU();			
-		// 	DebugService();			
-		// 	Parse(Uart3Buffer);
-			
-		// }			
+		if(SoftTimer[1] == 0)
+		{// 每隔50ms 执行一次
+			SoftTimer[1] = 20;
+//			ResponseIMU();			
+//			DebugService();			
+			Parse(Uart3Buffer);
+		
+		}			
   	
-		// if(SoftTimer[2] == 0)
-		// {
-		// 	SoftTimer[2] = 20;
-		// 	ShowHomePage();
-	
-		// 	Read_Distane();
+//		if(SoftTimer[2] == 0)
+//		{
+//			SoftTimer[2] = 20;
+//			ShowHomePage();
+//	
+//			Read_Distane();
 
-		// 	if(g_CarRunningMode == ULTRA_FOLLOW_MODE){
-		// 		if(IsUltraOK())UltraControl(0);	//超声波跟随模式
-	 	// 	}
-		// 	if(g_CarRunningMode == ULTRA_AVOID_MODE){
-		// 		if(IsUltraOK())UltraControl(1);	//超声波避障模式
-	 	// 	}
-		// 	else if(g_CarRunningMode == INFRARED_TRACE_MODE){
-		// 		TailingControl();
-		// 	}
-		// }			
+//			if(g_CarRunningMode == ULTRA_FOLLOW_MODE){
+//				if(IsUltraOK())UltraControl(0);	//超声波跟随模式
+//	 		}
+//			if(g_CarRunningMode == ULTRA_AVOID_MODE){
+//				if(IsUltraOK())UltraControl(1);	//超声波避障模式
+//	 		}
+//			else if(g_CarRunningMode == INFRARED_TRACE_MODE){
+//				TailingControl();
+//			}
+//		}			
 	}
 }
 
